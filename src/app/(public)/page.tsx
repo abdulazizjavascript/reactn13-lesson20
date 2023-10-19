@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 const Home = async () => {
-  const { data }: AxiosResponse<Category[]> = await request.get("category");
+  const { data }: AxiosResponse<Category[]> = await request.get("categories");
   return (
     <main>
       <h1 className="text-center">All categories</h1>

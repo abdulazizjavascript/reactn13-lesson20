@@ -7,7 +7,7 @@ const GlobalError = ({
   error: Error & { digest?: string };
   reset: () => void;
 }) => {
-      console.log("Error", error)
+  console.log("Error", error);
   return (
     <div>
       <h1 className="text-center">{error.message}</h1>
